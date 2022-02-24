@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <form>
+           <h1>Give your Feedback</h1>
+          <div class="id">
+             <input type="text" placeholder="Full name">
+          <i class="far fa-user"></i>
+        </div>
+          <div class="id">
+          <input type="email" placeholder="Email adress">
+           <i class="far fa-envelope"></i>
+        </div>
+        <textarea cols="15" rows="5" placeholder="Enter your opinions here.."></textarea>
+   <button>Send</button>
+   <div class="img">
+  </form>
+  </div></div>
+  <style>
+      *{
+        margin: 0;
+        padding: 0%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        box-sizing:border-box;
+        outline: none;
+        background-color:rgba(29, 5, 5, 0.062);
+      }
+   
+      body{
+          display: flex;
+          min-height: 100vh;
+          align-items: center;
+          justify-content: center;
+          
+       
+      }
+
+     
+     .container{
+         width: 360px;
+         background:black;
+        box-shadow: 0 0 8px rgba(250, 250, 250, 0.6);
+        opacity: 0.6;
+     }
+     .container{
+         text-align: center;
+         width: 100vh;
+         padding: 25px 25px;
+}
+
+form h1{
+    padding: 10px 0;
+    color:white;
+}
+
+form .id{
+    position: relative;
+}
+ .id i{
+     position: absolute;
+     font-size: 1.5em;
+     top:50%;
+     right: 20px;
+     transform: translateY(-50%);
+ }
+form input{
+    width: 100%;
+    height: 50px;
+    margin: 4px 0;
+    border: 1px solid #5c5c5c;
+    border-radius:3px;
+    background:white;
+    padding: 0 15px;
+    font-size: 1.5em;
+    padding-right: 45px;
+}
+form textarea{
+  padding: 5px 15px;
+  border: 1px solid  #5c5c5c;
+  border-radius:3px;
+  background: white;
+  font-size: 1.5em;
+  width: 100%;
+  margin: 4px 0;
+}
+ form button{
+     margin-top: 5px;
+     border: none;
+     background:rgb(108, 255, 10);
+     color: azure;
+     padding: 10px 0;
+     width: 100%;
+     font-size: 30px;
+     font-weight: 800;
+     cursor: pointer;
+     border-radius: 3px;
+ }
+    form input:focus,
+    form textarea:focus{
+        border: 1px solid #00fff5;
+        color: #00fff0;
+        transition: all 0.3s ease; 
+    }
+
+    form input:focus::placeholder,
+    form textarea:focus::placeholder{
+       padding-left: 4px;
+        color: #00fff5;
+        transition: all 0.3s ease; 
+    }
+  </style>
+</body>
+</html>

@@ -1,0 +1,28 @@
+@media ( max-width: 600px){
+    .header__feedback{
+       float: none;
+    }
+
+    .header__feedback::before{
+        display: none;
+    }
+    .header__btn-menu{
+        display: block;
+    }
+    .menu ul{
+        display: none;
+    }
+    }
+
+    @media (max-width:400px){
+        .header__feedback::before{
+            display: block;
+        }
+    }
+
+    @media (max-width:375px){
+        .header__email{
+           padding-right: 30px;
+        }
+  
+}
